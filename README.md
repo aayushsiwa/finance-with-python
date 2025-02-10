@@ -1,0 +1,24 @@
+# Setup Python Environment
+
+-   Install Python https://www.python.org/downloads/
+-   Open terminal in VSCode
+-   Ensure you are in the project folder
+-   Create a virtual environment:
+    -   `python -m venv venv`
+-   Activate virtual environment:
+    -   Windows: `venv\Scripts\activate`
+    -   MacOS/Linux: `source venv/bin/activate`
+-   Verify Activation
+    -   Mac/Linux: `which python`
+    -   Windows: `where python`
+-   Install required packages
+    -   `pip install numpy pandas matplotlib yfinance mplfinance plotly jupyter`
+-   Create requirements.txt file
+    -   `pip freeze > requirements.txt`
+    -   To install from requirements.txt file: `pip install -r requirements.txt`
+-   To Deactivate virtual environment (when needed)
+    -   Mac/Linux/Windows: `deactivate`
+-   VSCode Integration
+    -   Press Ctrl/Cmd + Shift + P
+    -   Type: "Python: Select Interpreter"
+    -   Choose the interpreter: finance_env
